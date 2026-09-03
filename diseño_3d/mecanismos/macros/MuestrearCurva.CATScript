@@ -1,0 +1,566 @@
+Sub CATMain()
+
+    ' ============================================================
+    ' MUESTREO DE CURVA 3D EN CATIA V5 -> EXCEL
+    '
+    ' 1. Seleccionas una curva
+    ' 2. Introduces la resolución en mm
+    ' 3. CATIA muestrea la curva
+    ' 4. Crea un archivo Excel:
+    '
+    '    puntos_curva_CATIA.xlsx
+    '
+    ' Columnas:
+    '
+    ' A = Punto
+    ' B = S_mm
+    ' C = X_mm
+    ' D = Y_mm
+    ' E = Z_mm
+    '
+    ' ============================================================
+
+
+    ' ------------------------------------------------------------
+    ' DOCUMENTO ACTIVO
+    ' ------------------------------------------------------------
+
+    Dim doc
+    Set doc = CATIA.ActiveDocument
+
+    If TypeName(doc) <> "PartDocument" Then
+
+        MsgBox "Debes tener abierto un CATPart."
+
+        Exit Sub
+
+    End If
+
+
+    Dim part
+    Set part = doc.Part
+
+
+    ' ------------------------------------------------------------
+    ' SELECCIONAR CURVA
+    ' ------------------------------------------------------------
+
+    Dim sel
+    Set sel = doc.Selection
+
+    sel.Clear
+
+
+    Dim filtros(1)
+
+    filtros(0) = "HybridShape"
+    filtros(1) = "TriDimFeatEdge"
+
+
+    Dim estado
+
+    estado = sel.SelectElement2( _
+        filtros, _
+        "Selecciona la curva 3D que quieres muestrear", _
+        False)
+
+
+    If estado <> "Normal" Then
+
+        MsgBox "No se selecciono ninguna curva."
+
+        Exit Sub
+
+    End If
+
+
+    Dim objetoCurva
+    Set objetoCurva = sel.Item(1).Value
+
+
+    Dim refCurva
+
+
+    On Error Resume Next
+
+    Set refCurva = part.CreateReferenceFromObject(objetoCurva)
+
+
+    If Err.Number <> 0 Then
+
+        Err.Clear
+
+        Set refCurva = sel.Item(1).Reference
+
+    End If
+
+
+    If Err.Number <> 0 Then
+
+        MsgBox "No se pudo crear una referencia de la curva."
+
+        Exit Sub
+
+    End If
+
+
+    On Error GoTo 0
+
+
+    sel.Clear
+
+
+    ' ------------------------------------------------------------
+    ' PEDIR RESOLUCION
+    ' ------------------------------------------------------------
+
+    Dim textoResolucion
+
+    textoResolucion = InputBox( _
+        "Introduce la distancia entre muestras en mm." & vbCrLf & vbCrLf & _
+        "Ejemplos:" & vbCrLf & _
+        "1 = un punto cada 1 mm" & vbCrLf & _
+        "0.5 = un punto cada 0.5 mm" & vbCrLf & _
+        "5 = un punto cada 5 mm", _
+        "Resolucion de muestreo", _
+        "1")
+
+
+    If textoResolucion = "" Then
+        Exit Sub
+    End If
+
+
+    Dim resolucion
+
+
+    ' ------------------------------------------------------------
+    ' LEER NUMERO
+    ' ------------------------------------------------------------
+
+    On Error Resume Next
+
+    resolucion = CDbl(textoResolucion)
+
+
+    If Err.Number <> 0 Then
+
+        Err.Clear
+
+        textoResolucion = Replace(textoResolucion, ".", ",")
+
+        resolucion = CDbl(textoResolucion)
+
+    End If
+
+
+    If Err.Number <> 0 Then
+
+        MsgBox "La resolucion introducida no es valida."
+
+        Exit Sub
+
+    End If
+
+
+    On Error GoTo 0
+
+
+    If resolucion <= 0 Then
+
+        MsgBox "La resolucion debe ser mayor que cero."
+
+        Exit Sub
+
+    End If
+
+
+    ' ------------------------------------------------------------
+    ' MEDIR LONGITUD DE CURVA
+    ' ------------------------------------------------------------
+
+    Dim spa
+    Set spa = doc.GetWorkbench("SPAWorkbench")
+
+
+    Dim measurable
+
+
+    On Error Resume Next
+
+    Set measurable = spa.GetMeasurable(refCurva)
+
+
+    If Err.Number <> 0 Then
+
+        MsgBox _
+            "CATIA no pudo medir la curva seleccionada." & vbCrLf & _
+            "Selecciona una spline, curva o arista valida."
+
+        Exit Sub
+
+    End If
+
+
+    On Error GoTo 0
+
+
+    Dim longitudTotal
+
+    longitudTotal = measurable.Length
+
+
+    ' ------------------------------------------------------------
+    ' CALCULAR NUMERO DE INTERVALOS
+    ' ------------------------------------------------------------
+
+    Dim numeroIntervalos
+
+    numeroIntervalos = Int(longitudTotal / resolucion)
+
+
+    Dim numeroPuntos
+
+    numeroPuntos = numeroIntervalos + 1
+
+
+    If Abs(numeroIntervalos * resolucion - longitudTotal) > 0.000001 Then
+
+        numeroPuntos = numeroPuntos + 1
+
+    End If
+
+
+    ' ------------------------------------------------------------
+    ' CONFIRMACION
+    ' ------------------------------------------------------------
+
+    Dim respuesta
+
+    respuesta = MsgBox( _
+        "Longitud de la curva: " & _
+        Round(longitudTotal, 3) & " mm" & vbCrLf & vbCrLf & _
+        "Resolucion: " & _
+        Round(resolucion, 3) & " mm" & vbCrLf & _
+        "Numero de puntos: " & _
+        numeroPuntos & vbCrLf & vbCrLf & _
+        "Deseas continuar?", _
+        vbYesNo, _
+        "Muestreo de curva")
+
+
+    If respuesta <> vbYes Then
+        Exit Sub
+    End If
+
+
+    ' ============================================================
+    ' ABRIR EXCEL
+    ' ============================================================
+
+    Dim excel
+    Dim libro
+    Dim hoja
+
+
+    On Error Resume Next
+
+    Set excel = CreateObject("Excel.Application")
+
+
+    If Err.Number <> 0 Then
+
+        MsgBox _
+            "No se pudo abrir Microsoft Excel." & vbCrLf & _
+            "Comprueba que Excel este instalado."
+
+        Exit Sub
+
+    End If
+
+
+    On Error GoTo 0
+
+
+    ' Excel visible
+    excel.Visible = True
+
+    ' Evitar mensajes al sobrescribir archivos
+    excel.DisplayAlerts = False
+
+
+    ' Crear libro nuevo
+    Set libro = excel.Workbooks.Add
+
+
+    ' Primera hoja
+    Set hoja = libro.Worksheets(1)
+
+
+    hoja.Name = "Muestreo CATIA"
+
+
+    ' ============================================================
+    ' ENCABEZADOS
+    ' ============================================================
+
+    hoja.Cells(1, 1).Value = "Punto"
+
+    hoja.Cells(1, 2).Value = "S_mm"
+
+    hoja.Cells(1, 3).Value = "X_mm"
+
+    hoja.Cells(1, 4).Value = "Y_mm"
+
+    hoja.Cells(1, 5).Value = "Z_mm"
+
+
+    ' Encabezados en negritas
+    hoja.Range("A1:E1").Font.Bold = True
+
+
+    ' ============================================================
+    ' CREAR GEOMETRICAL SET TEMPORAL
+    ' ============================================================
+
+    Dim hybridBodies
+    Set hybridBodies = part.HybridBodies
+
+
+    Dim tempBody
+    Set tempBody = hybridBodies.Add()
+
+
+    tempBody.Name = "MUESTREO_TEMPORAL"
+
+
+    Dim factory
+    Set factory = part.HybridShapeFactory
+
+
+    ' ============================================================
+    ' VARIABLES
+    ' ============================================================
+
+    Dim i
+
+    Dim distancia
+
+    Dim punto
+
+    Dim xyz(2)
+
+    Dim contador
+
+    Dim fila
+
+
+    contador = 0
+
+    fila = 2
+
+
+    ' ============================================================
+    ' MUESTREAR CURVA
+    ' ============================================================
+
+    For i = 0 To numeroIntervalos
+
+
+        distancia = i * resolucion
+
+
+        If distancia > longitudTotal Then
+
+            distancia = longitudTotal
+
+        End If
+
+
+        Set punto = factory.AddNewPointOnCurveFromDistance( _
+            refCurva, _
+            distancia, _
+            False)
+
+
+        tempBody.AppendHybridShape punto
+
+
+        punto.Name = "Muestra_" & CStr(contador)
+
+
+        ' Actualizar para poder obtener XYZ
+        part.UpdateObject punto
+
+
+        punto.GetCoordinates xyz
+
+
+        ' ========================================================
+        ' ESCRIBIR DIRECTAMENTE EN CELDAS DE EXCEL
+        ' ========================================================
+
+        hoja.Cells(fila, 1).Value = contador
+
+        hoja.Cells(fila, 2).Value = CDbl(distancia)
+
+        hoja.Cells(fila, 3).Value = CDbl(xyz(0))
+
+        hoja.Cells(fila, 4).Value = CDbl(xyz(1))
+
+        hoja.Cells(fila, 5).Value = CDbl(xyz(2))
+
+
+        fila = fila + 1
+
+        contador = contador + 1
+
+
+    Next
+
+
+    ' ============================================================
+    ' AGREGAR EXTREMO FINAL SI ES NECESARIO
+    ' ============================================================
+
+    If Abs(numeroIntervalos * resolucion - longitudTotal) > 0.000001 Then
+
+
+        distancia = longitudTotal
+
+
+        Set punto = factory.AddNewPointOnCurveFromDistance( _
+            refCurva, _
+            longitudTotal, _
+            False)
+
+
+        tempBody.AppendHybridShape punto
+
+
+        punto.Name = "Muestra_" & CStr(contador)
+
+
+        part.UpdateObject punto
+
+
+        punto.GetCoordinates xyz
+
+
+        hoja.Cells(fila, 1).Value = contador
+
+        hoja.Cells(fila, 2).Value = CDbl(distancia)
+
+        hoja.Cells(fila, 3).Value = CDbl(xyz(0))
+
+        hoja.Cells(fila, 4).Value = CDbl(xyz(1))
+
+        hoja.Cells(fila, 5).Value = CDbl(xyz(2))
+
+
+        fila = fila + 1
+
+        contador = contador + 1
+
+
+    End If
+
+
+    ' ============================================================
+    ' FORMATO DE EXCEL
+    ' ============================================================
+
+    ' Mostrar 6 decimales
+    hoja.Range("B2:E" & CStr(fila - 1)).NumberFormat = "0.000000"
+
+
+    ' Ajustar automáticamente ancho de columnas
+    hoja.Columns("A:E").AutoFit
+
+
+    ' ============================================================
+    ' INFORMACION ADICIONAL
+    ' ============================================================
+
+    hoja.Cells(1, 7).Value = "Longitud total [mm]"
+
+    hoja.Cells(1, 8).Value = longitudTotal
+
+
+    hoja.Cells(2, 7).Value = "Resolucion [mm]"
+
+    hoja.Cells(2, 8).Value = resolucion
+
+
+    hoja.Cells(3, 7).Value = "Numero de puntos"
+
+    hoja.Cells(3, 8).Value = contador
+
+
+    hoja.Range("G1:G3").Font.Bold = True
+
+    hoja.Columns("G:H").AutoFit
+
+
+    ' ============================================================
+    ' GUARDAR ARCHIVO EN ESCRITORIO
+    ' ============================================================
+
+    Dim shell
+
+    Set shell = CreateObject("WScript.Shell")
+
+
+    Dim escritorio
+
+    escritorio = shell.SpecialFolders("Desktop")
+
+
+    Dim rutaExcel
+
+    rutaExcel = escritorio & "\puntos_curva_CATIA.xlsx"
+
+
+    ' 51 = formato XLSX
+    libro.SaveAs rutaExcel, 51
+
+
+    excel.DisplayAlerts = True
+
+
+    ' ============================================================
+    ' BORRAR GEOMETRIA TEMPORAL DE CATIA
+    ' ============================================================
+
+    sel.Clear
+
+    sel.Add tempBody
+
+
+    On Error Resume Next
+
+    sel.Delete
+
+    On Error GoTo 0
+
+
+    sel.Clear
+
+
+    part.Update
+
+
+    ' ============================================================
+    ' RESULTADO
+    ' ============================================================
+
+    MsgBox _
+        "Muestreo terminado." & vbCrLf & vbCrLf & _
+        "Puntos exportados: " & contador & vbCrLf & _
+        "Longitud: " & Round(longitudTotal, 3) & " mm" & vbCrLf & _
+        "Resolucion: " & Round(resolucion, 3) & " mm" & vbCrLf & vbCrLf & _
+        "Archivo creado en:" & vbCrLf & _
+        rutaExcel
+
+
+End Sub

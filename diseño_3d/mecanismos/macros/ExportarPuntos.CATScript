@@ -1,0 +1,115 @@
+Sub CATMain()
+
+    '--------------------------------------------
+    ' Obtener documento activo
+    '--------------------------------------------
+    Dim doc
+    Set doc = CATIA.ActiveDocument
+
+    '--------------------------------------------
+    ' Obtener selección de CATIA
+    '--------------------------------------------
+    Dim sel
+    Set sel = doc.Selection
+
+    sel.Clear
+
+    '--------------------------------------------
+    ' Buscar todos los puntos del CATPart
+    '--------------------------------------------
+    sel.Search "CATGmoSearch.Point,all"
+
+    If sel.Count = 0 Then
+        MsgBox "No se encontraron puntos en el CATPart."
+        Exit Sub
+    End If
+
+    '--------------------------------------------
+    ' Obtener ruta del Escritorio de Windows
+    '--------------------------------------------
+    Dim shell
+    Set shell = CreateObject("WScript.Shell")
+
+    Dim escritorio
+    escritorio = shell.SpecialFolders("Desktop")
+
+    Dim rutaArchivo
+    rutaArchivo = escritorio & "\puntos_CATIA.csv"
+
+    '--------------------------------------------
+    ' Crear archivo CSV
+    '--------------------------------------------
+    Dim fso
+    Set fso = CreateObject("Scripting.FileSystemObject")
+
+    Dim archivo
+    Set archivo = fso.CreateTextFile(rutaArchivo, True)
+
+    ' Encabezado
+    archivo.WriteLine "Punto;X_mm;Y_mm;Z_mm"
+
+    '--------------------------------------------
+    ' Variables
+    '--------------------------------------------
+    Dim i
+    Dim punto
+    Dim coordenadas(2)
+
+    Dim correctos
+    Dim errores
+
+    correctos = 0
+    errores = 0
+
+    '--------------------------------------------
+    ' Leer cada punto
+    '--------------------------------------------
+    For i = 1 To sel.Count
+
+        Set punto = sel.Item(i).Value
+
+        On Error Resume Next
+
+        Err.Clear
+
+        punto.GetCoordinates coordenadas
+
+        If Err.Number = 0 Then
+
+            archivo.WriteLine _
+                punto.Name & ";" & _
+                Replace(CStr(coordenadas(0)), ",", ".") & ";" & _
+                Replace(CStr(coordenadas(1)), ",", ".") & ";" & _
+                Replace(CStr(coordenadas(2)), ",", ".")
+
+            correctos = correctos + 1
+
+        Else
+
+            errores = errores + 1
+            Err.Clear
+
+        End If
+
+        On Error GoTo 0
+
+    Next
+
+    '--------------------------------------------
+    ' Cerrar archivo
+    '--------------------------------------------
+    archivo.Close
+
+    sel.Clear
+
+    '--------------------------------------------
+    ' Mensaje final
+    '--------------------------------------------
+    MsgBox _
+        "Exportacion terminada." & vbCrLf & vbCrLf & _
+        "Puntos exportados: " & correctos & vbCrLf & _
+        "Puntos con error: " & errores & vbCrLf & vbCrLf & _
+        "Archivo creado en:" & vbCrLf & _
+        rutaArchivo
+
+End Sub
