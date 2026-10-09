@@ -5,9 +5,8 @@ import time
 # CONFIGURACION
 # ============================
 
-DEVICENAME = 'COM7'      # CAMBIA ESTO
+DEVICENAME = "COM7"
 BAUDRATE = 1000000
-SERVO_ID = 1
 
 # ============================
 # INICIAR
@@ -24,40 +23,85 @@ print("Puerto abierto correctamente")
 
 if not portHandler.setBaudRate(BAUDRATE):
     print("ERROR: no se pudo configurar el baudrate")
-    quit()
-
-print("Baudrate configurado")
-
-# ============================
-# PING
-# ============================
-
-model_number, comm_result, error = servo.ping(SERVO_ID)
-
-if comm_result != COMM_SUCCESS:
-    print("ERROR: servo no encontrado")
     portHandler.closePort()
     quit()
 
-print("Servo encontrado")
-print("Modelo:", model_number)
+print("Baudrate configurado:", BAUDRATE)
+
+# ============================
+# BUSCAR SERVO
+# ============================
+
+SERVO_ID = None
+
+print()
+print("Buscando servo...")
+
+for id_actual in [1, 2]:
+
+    print("Probando ID", id_actual)
+
+    modelo, resultado, error = servo.ping(id_actual)
+
+    if resultado == COMM_SUCCESS:
+
+        SERVO_ID = id_actual
+
+        print()
+        print("==========================")
+        print(" SERVO ENCONTRADO")
+        print("==========================")
+        print("ID:", SERVO_ID)
+        print("Modelo:", modelo)
+
+        break
+
+if SERVO_ID is None:
+
+    print()
+    print("ERROR: no se encontro ID 1 ni ID 2")
+    print()
+    print("Revisa:")
+    print("- Jumper Waveshare en B")
+    print("- Fuente externa de 12 V")
+    print("- D / V / G")
+    print("- COM7")
+    
+    portHandler.closePort()
+    quit()
 
 # ============================
 # ACTIVAR TORQUE
 # ============================
 
-servo.write1ByteTxRx(
+resultado, error = servo.write1ByteTxRx(
     SERVO_ID,
-    40,       # Torque Enable
+    40,
     1
 )
+
+print()
+print("Torque activado")
+
+# ============================
+# LEER POSICION INICIAL
+# ============================
+
+posicion, resultado, error = servo.ReadPos(SERVO_ID)
+
+print("Posicion inicial:", posicion)
 
 print()
 print("==========================")
 print(" CONTROL STS3215")
 print("==========================")
-print("Escribe una posicion")
-print("0 - 4095")
+print()
+print("Escribe una posicion.")
+print("Prueba primero:")
+print("1900")
+print("2048")
+print("2200")
+print()
 print("q = salir")
 print()
 
@@ -67,34 +111,44 @@ print()
 
 while True:
 
-    entrada = input("Posicion: ")
+    entrada = input("Posicion: ").strip()
 
     if entrada.lower() == "q":
         break
 
     try:
+
         posicion = int(entrada)
 
         if posicion < 0 or posicion > 4095:
             print("Usa valores entre 0 y 4095")
             continue
 
-        # ID, posicion, velocidad, aceleracion
-        servo.WritePosEx(
+        print(
+            "Moviendo servo",
             SERVO_ID,
-            posicion,
-            500,
-            50
+            "a",
+            posicion
         )
 
-        time.sleep(0.2)
+        resultado, error = servo.WritePosEx(
+            SERVO_ID,
+            posicion,
+            300,    # velocidad
+            20      # aceleracion
+        )
 
-        posicion_real, resultado, error = servo.ReadPos(SERVO_ID)
+        time.sleep(0.5)
+
+        posicion_real, resultado, error = servo.ReadPos(
+            SERVO_ID
+        )
 
         print("Posicion real:", posicion_real)
         print()
 
     except ValueError:
+
         print("Escribe un numero valido")
 
 # ============================
@@ -110,3 +164,6 @@ servo.write1ByteTxRx(
 portHandler.closePort()
 
 print("Servo desconectado")
+
+
+ㅤㅤㅤ
