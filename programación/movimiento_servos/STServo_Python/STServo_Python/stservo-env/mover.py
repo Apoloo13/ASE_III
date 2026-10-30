@@ -1,169 +1,142 @@
+
 from scservo_sdk import *
-import time
 
-# ============================
+# =====================================
 # CONFIGURACION
-# ============================
+# =====================================
 
-DEVICENAME = "COM7"
+PUERTO = "COM3"   # Usa el COM que te funciono
 BAUDRATE = 1000000
+SERVO_ID = 2
 
-# ============================
-# INICIAR
-# ============================
+VELOCIDAD = 300
+ACELERACION = 30
+PASO = 10
 
-portHandler = PortHandler(DEVICENAME)
-servo = sms_sts(portHandler)
+# =====================================
+# FUNCIONES
+# =====================================
 
-if not portHandler.openPort():
-    print("ERROR: no se pudo abrir el puerto")
-    quit()
+def a_grados(posicion):
+    return posicion * 360 / 4095
 
-print("Puerto abierto correctamente")
+def a_posicion(grados):
+    return round(grados * 4095 / 360)
 
-if not portHandler.setBaudRate(BAUDRATE):
-    print("ERROR: no se pudo configurar el baudrate")
-    portHandler.closePort()
-    quit()
+def leer_posicion():
+    pos, resultado, error = servo.ReadPos(SERVO_ID)
+    if resultado != COMM_SUCCESS or error != 0:
+        raise RuntimeError("Error al leer posicion")
+    return pos
 
-print("Baudrate configurado:", BAUDRATE)
+def mover(grados):
+    grados = max(0, min(360, grados))
+    posicion = a_posicion(grados)
 
-# ============================
-# BUSCAR SERVO
-# ============================
+    resultado, error = servo.WritePosEx(
+        SERVO_ID,
+        posicion,
+        VELOCIDAD,
+        ACELERACION
+    )
 
-SERVO_ID = None
+    if resultado == COMM_SUCCESS and error == 0:
+        print(f"Objetivo: {grados:.1f} grados")
+        return True
 
-print()
-print("Buscando servo...")
+    print("Error al enviar movimiento")
+    return False
 
-for id_actual in [1, 2]:
+# =====================================
+# CONECTAR
+# =====================================
 
-    print("Probando ID", id_actual)
+port = PortHandler(PUERTO)
+servo = sms_sts(port)
+torque_activado = False
 
-    modelo, resultado, error = servo.ping(id_actual)
+try:
+    if not port.openPort():
+        raise RuntimeError("No se pudo abrir el puerto")
 
-    if resultado == COMM_SUCCESS:
+    if not port.setBaudRate(BAUDRATE):
+        raise RuntimeError("Error al configurar baudrate")
 
-        SERVO_ID = id_actual
+    print("Puerto abierto correctamente")
 
-        print()
-        print("==========================")
-        print(" SERVO ENCONTRADO")
-        print("==========================")
-        print("ID:", SERVO_ID)
-        print("Modelo:", modelo)
+    modelo, resultado, error = servo.ping(SERVO_ID)
 
-        break
+    if resultado != COMM_SUCCESS or error != 0:
+        raise RuntimeError("Servo ID 2 no detectado")
 
-if SERVO_ID is None:
+    print(f"Servo ID {SERVO_ID} conectado")
+    print(f"Modelo: {modelo}")
 
-    print()
-    print("ERROR: no se encontro ID 1 ni ID 2")
-    print()
-    print("Revisa:")
-    print("- Jumper Waveshare en B")
-    print("- Fuente externa de 12 V")
-    print("- D / V / G")
-    print("- COM7")
-    
-    portHandler.closePort()
-    quit()
+    posicion_inicial = leer_posicion()
+    angulo = a_grados(posicion_inicial)
 
-# ============================
-# ACTIVAR TORQUE
-# ============================
+    print(f"Posicion actual: {angulo:.1f} grados")
 
-resultado, error = servo.write1ByteTxRx(
-    SERVO_ID,
-    40,
-    1
-)
+    resultado, error = servo.write1ByteTxRx(
+        SERVO_ID, 40, 1
+    )
 
-print()
-print("Torque activado")
+    if resultado != COMM_SUCCESS or error != 0:
+        raise RuntimeError("No se pudo activar el torque")
 
-# ============================
-# LEER POSICION INICIAL
-# ============================
+    torque_activado = True
 
-posicion, resultado, error = servo.ReadPos(SERVO_ID)
+    # =================================
+    # CONTROL MANUAL
+    # =================================
 
-print("Posicion inicial:", posicion)
+    print("\n====== CONTROL MANUAL ======")
+    print("a = Girar 10 grados menos")
+    print("d = Girar 10 grados mas")
+    print("p = Leer posicion real")
+    print("0-360 = Elegir angulo")
+    print("q = Salir")
+    print("============================")
 
-print()
-print("==========================")
-print(" CONTROL STS3215")
-print("==========================")
-print()
-print("Escribe una posicion.")
-print("Prueba primero:")
-print("1900")
-print("2048")
-print("2200")
-print()
-print("q = salir")
-print()
+    while True:
 
-# ============================
-# CONTROL
-# ============================
+        comando = input("\nComando: ").strip().lower()
 
-while True:
+        if comando == "q":
+            break
 
-    entrada = input("Posicion: ").strip()
-
-    if entrada.lower() == "q":
-        break
-
-    try:
-
-        posicion = int(entrada)
-
-        if posicion < 0 or posicion > 4095:
-            print("Usa valores entre 0 y 4095")
+        if comando == "p":
+            angulo = a_grados(leer_posicion())
+            print(f"Posicion real: {angulo:.1f} grados")
             continue
 
-        print(
-            "Moviendo servo",
-            SERVO_ID,
-            "a",
-            posicion
-        )
+        if comando == "a":
+            objetivo = angulo - PASO
 
-        resultado, error = servo.WritePosEx(
-            SERVO_ID,
-            posicion,
-            300,    # velocidad
-            20      # aceleracion
-        )
+        elif comando == "d":
+            objetivo = angulo + PASO
 
-        time.sleep(0.5)
+        else:
+            try:
+                objetivo = float(comando)
+            except ValueError:
+                print("Comando no valido")
+                continue
 
-        posicion_real, resultado, error = servo.ReadPos(
-            SERVO_ID
-        )
+        objetivo = max(0, min(360, objetivo))
 
-        print("Posicion real:", posicion_real)
-        print()
+        if mover(objetivo):
+            angulo = objetivo
 
-    except ValueError:
+except KeyboardInterrupt:
+    print("\nPrograma interrumpido")
 
-        print("Escribe un numero valido")
+except Exception as e:
+    print(f"\nERROR: {e}")
 
-# ============================
-# SALIR
-# ============================
+finally:
+    if torque_activado:
+        servo.write1ByteTxRx(SERVO_ID, 40, 0)
 
-servo.write1ByteTxRx(
-    SERVO_ID,
-    40,
-    0
-)
-
-portHandler.closePort()
-
-print("Servo desconectado")
-
-
-ㅤㅤㅤ
+    port.closePort()
+    print("Puerto cerrado")
