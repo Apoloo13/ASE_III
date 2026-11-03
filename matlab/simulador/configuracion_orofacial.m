@@ -186,4 +186,57 @@ cfg.trayectoriaS = struct( ...
     'analizarCadaEstado',false, ...
     'gradoPolinomio',5);
 
+
+%% TRAYECTORIA DEL FONEMA /t/
+
+cfg.trayectoriaT = struct( ...
+    'nEstados',60, ...
+    'registroY_mm',3.0, ...
+    'registroZ_mm',1.0, ...
+    'duracionVisual_s',3.0, ...
+    'fpsGIF',15, ...
+    'analizarCadaEstado',false, ...
+    'gradoPolinomio',5);
+
+%% FONEMA /t/ - CONFIGURACIONES EXPLORATORIAS
+
+cfg.fonemaT = struct();
+
+cfg.fonemaT.registroY_mm = 3.0;
+cfg.fonemaT.indicePrincipal = 2;
+
+cfg.fonemaT.umbralProximidad_mm = 1.0;
+cfg.fonemaT.toleranciaPenetracion_mm = 0.10;
+
+% Posiciones materiales para el control anterior.
+cfg.fonemaT.sControl = [0.05; 0.10; 0.16; 0.23];
+cfg.fonemaT.pesos = [0.55; 0.80; 0.75; 0.40];
+
+% Candidatas: T1 laminal, T2 apico-laminal, T3 apical.
+cfg.fonemaT.nombres = { ...
+    'T1 - Laminal moderada', ...
+    'T2 - Apico-laminal curvada', ...
+    'T3 - Apical exploratoria'};
+
+% Desplazamientos de la punta respecto a su referencia [dY dZ].
+cfg.fonemaT.deltaPuntaYZ = [
+    2.5  0.0
+    2.8  0.0
+    2.4  1.0
+    ];
+
+% Cada capa contiene los objetivos [dY dZ] de una candidata.
+% Son consignas iniciales de prueba, no medidas clinicas.
+
+cfg.fonemaT.deltaDorso = cat(3, ...
+    [1.5 1.2; 2.2 1.9; 3.0 2.0; 1.7 0.8], ...
+    [1.1 1.0; 2.8 2.9; 3.7 2.8; 1.5 1.0], ...
+    [1.4 1.4; 2.2 1.5; 2.0 1.0; 0.9 0.6]);
+
+cfg.fonemaT.curvaturaApical = [0 0.003 0.006];
+cfg.fonemaT.curvaturaLaminal = [0 0.003 0];
+
+cfg.fonemaT.anguloApice = [NaN NaN NaN];
+cfg.fonemaT.anguloLamina = [NaN NaN NaN];
+
 end
