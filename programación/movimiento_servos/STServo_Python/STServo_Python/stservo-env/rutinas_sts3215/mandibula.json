@@ -1,0 +1,44 @@
+{
+  "format": "feetech_sts3215_routine",
+  "version": 1,
+  "name": "Mi rutina",
+  "repeats": 30,
+  "steps": [
+    {
+      "name": "arriba",
+      "wait_s": 2.0,
+      "speed": 300,
+      "acc": 30,
+      "targets": [
+        {
+          "slot": "A1",
+          "id": 1,
+          "angle_deg": 200.0
+        },
+        {
+          "slot": "A2",
+          "id": 2,
+          "angle_deg": 160.0
+        }
+      ]
+    },
+    {
+      "name": "abajo",
+      "wait_s": 2.0,
+      "speed": 300,
+      "acc": 30,
+      "targets": [
+        {
+          "slot": "A1",
+          "id": 1,
+          "angle_deg": 180.0
+        },
+        {
+          "slot": "A2",
+          "id": 2,
+          "angle_deg": 180.0
+        }
+      ]
+    }
+  ]
+}

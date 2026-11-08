@@ -1,0 +1,34 @@
+{
+  "format": "feetech_sts3215_routine",
+  "version": 1,
+  "name": "labio",
+  "repeats": 100,
+  "steps": [
+    {
+      "name": "arriba",
+      "wait_s": 1.0,
+      "speed": 1000,
+      "acc": 100,
+      "targets": [
+        {
+          "slot": "A2",
+          "id": 9,
+          "angle_deg": 135.0
+        }
+      ]
+    },
+    {
+      "name": "abajo",
+      "wait_s": 1.0,
+      "speed": 1000,
+      "acc": 100,
+      "targets": [
+        {
+          "slot": "A2",
+          "id": 9,
+          "angle_deg": 185.0
+        }
+      ]
+    }
+  ]
+}
