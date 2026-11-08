@@ -1,0 +1,1302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="11/05/26||05:40:15" using="Simscape Multibody Link Version 7.4" from="SolidWorks 33.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="LENGUA_ROBOTICA_CINEMATICA" uid="LENGUA_ROBOTICA_CINEMATICA" version="232">
+<AssemblyFile name="LENGUA_ROBOTICA_CINEMATICA.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="SUB_COSTILLA_08-1" uid="SUB_COSTILLA_08-1" entityUid="SUB_COSTILLA_08" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<Instance name="Save Bodies1[32]-1" uid="Save Bodies1[32]-1" grounded="true" entityUid="Save Bodies1[32]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[4]-1" uid="Save Bodies1[4]-1" grounded="true" entityUid="Save Bodies1[4]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[36]-1" uid="Save Bodies1[36]-1" grounded="true" entityUid="Save Bodies1[36]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[39]-1" uid="Save Bodies1[39]-1" grounded="true" entityUid="Save Bodies1[39]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="SUB_COSTILLA_03-1" uid="SUB_COSTILLA_03-1" entityUid="SUB_COSTILLA_03" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<Instance name="Save Bodies1[30]-1" uid="Save Bodies1[30]-1" grounded="true" entityUid="Save Bodies1[30]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[5]-1" uid="Save Bodies1[5]-1" grounded="true" entityUid="Save Bodies1[5]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[29]-1" uid="Save Bodies1[29]-1" grounded="true" entityUid="Save Bodies1[29]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[13]-1" uid="Save Bodies1[13]-1" grounded="true" entityUid="Save Bodies1[13]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="SUB_COSTILLA_06-1" uid="SUB_COSTILLA_06-1" entityUid="SUB_COSTILLA_06" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<Instance name="Save Bodies1[3]-1" uid="Save Bodies1[3]-1" grounded="true" entityUid="Save Bodies1[3]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[23]-1" uid="Save Bodies1[23]-1" grounded="true" entityUid="Save Bodies1[23]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[28]-1" uid="Save Bodies1[28]-1" grounded="true" entityUid="Save Bodies1[28]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[35]-1" uid="Save Bodies1[35]-1" grounded="true" entityUid="Save Bodies1[35]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="SUB_COSTILLA_05-1" uid="SUB_COSTILLA_05-1" entityUid="SUB_COSTILLA_05" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<Instance name="Save Bodies1[1]-1" uid="Save Bodies1[1]-1" grounded="true" entityUid="Save Bodies1[1]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[15]-1" uid="Save Bodies1[15]-1" grounded="true" entityUid="Save Bodies1[15]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[11]-1" uid="Save Bodies1[11]-1" grounded="true" entityUid="Save Bodies1[11]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[17]-1" uid="Save Bodies1[17]-1" grounded="true" entityUid="Save Bodies1[17]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="SUB_COSTILLA_02-1" uid="SUB_COSTILLA_02-1" entityUid="SUB_COSTILLA_02" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<Instance name="Save Bodies1[16]-1" uid="Save Bodies1[16]-1" grounded="true" entityUid="Save Bodies1[16]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[38]-1" uid="Save Bodies1[38]-1" grounded="true" entityUid="Save Bodies1[38]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[18]-1" uid="Save Bodies1[18]-1" grounded="true" entityUid="Save Bodies1[18]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[31]-1" uid="Save Bodies1[31]-1" grounded="true" entityUid="Save Bodies1[31]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="SUB_COSTILLA_04-1" uid="SUB_COSTILLA_04-1" entityUid="SUB_COSTILLA_04" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.00010000000000000113 0 0</Translation>
+</Transform>
+<Instance name="Save Bodies1[26]-1" uid="Save Bodies1[26]-1" grounded="true" entityUid="Save Bodies1[26]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[25]-1" uid="Save Bodies1[25]-1" grounded="true" entityUid="Save Bodies1[25]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[20]-1" uid="Save Bodies1[20]-1" grounded="true" entityUid="Save Bodies1[20]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[7]-1" uid="Save Bodies1[7]-1" grounded="true" entityUid="Save Bodies1[7]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="SUB_COSTILLA_07-1" uid="SUB_COSTILLA_07-1" entityUid="SUB_COSTILLA_07" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<Instance name="Save Bodies1[34]-1" uid="Save Bodies1[34]-1" grounded="true" entityUid="Save Bodies1[34]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[10]-1" uid="Save Bodies1[10]-1" grounded="true" entityUid="Save Bodies1[10]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[33]-1" uid="Save Bodies1[33]-1" grounded="true" entityUid="Save Bodies1[33]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[19]-1" uid="Save Bodies1[19]-1" grounded="true" entityUid="Save Bodies1[19]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="TEETH-1" uid="TEETH-1" grounded="true" entityUid="TEETH" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<Instance name="Save Bodies1[37]-1" uid="Save Bodies1[37]-1" grounded="true" entityUid="Save Bodies1[37]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[14]-1" uid="Save Bodies1[14]-1" grounded="true" entityUid="Save Bodies1[14]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[21]-1" uid="Save Bodies1[21]-1" grounded="true" entityUid="Save Bodies1[21]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[6]-1" uid="Save Bodies1[6]-1" grounded="true" entityUid="Save Bodies1[6]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="SUB_COSTILLA_01-1" uid="SUB_COSTILLA_01-1" entityUid="SUB_COSTILLA_01" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-4.9999999999999697e-05 0 0</Translation>
+</Transform>
+<Instance name="Save Bodies1[27]-1" uid="Save Bodies1[27]-1" grounded="true" entityUid="Save Bodies1[27]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[2]-1" uid="Save Bodies1[2]-1" grounded="true" entityUid="Save Bodies1[2]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[8]-1" uid="Save Bodies1[8]-1" grounded="true" entityUid="Save Bodies1[8]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="SUB_COSTILLA_09-1" uid="SUB_COSTILLA_09-1" grounded="true" entityUid="SUB_COSTILLA_09" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<Instance name="Save Bodies1[22]-1" uid="Save Bodies1[22]-1" grounded="true" entityUid="Save Bodies1[22]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[12]-1" visible="false" uid="Save Bodies1[12]-1" grounded="true" entityUid="Save Bodies1[12]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[9]-1" uid="Save Bodies1[9]-1" grounded="true" entityUid="Save Bodies1[9]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Save Bodies1[24]-1" uid="Save Bodies1[24]-1" grounded="true" entityUid="Save Bodies1[24]*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_08-1</Uid>
+<Uid>Save Bodies1[4]-1</Uid>
+</InstancePath>
+<Position>-0.014950000000008 -0.073460965094426997 -0.027359330057193008</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_09-1</Uid>
+<Uid>Save Bodies1[9]-1</Uid>
+</InstancePath>
+<Position>-0.010150000000008 -0.073460965094427011 -0.027359330057192995</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_08-1</Uid>
+<Uid>Save Bodies1[4]-1</Uid>
+</InstancePath>
+<Position>-0.014950000000008 -0.061560965094427003 -0.027359330057193008</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_07-1</Uid>
+<Uid>Save Bodies1[10]-1</Uid>
+</InstancePath>
+<Position>-0.010150000000008 -0.061560965094426996 -0.027359330057192995</Position>
+<Axis>-1 0 9.9999999999999889e-16</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_06-1</Uid>
+<Uid>Save Bodies1[23]-1</Uid>
+</InstancePath>
+<Position>-0.0077500000000080005 -0.049660965094426995 -0.027359330057192995</Position>
+<Axis>-1 0 1.0000000000000001e-15</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_07-1</Uid>
+<Uid>Save Bodies1[10]-1</Uid>
+</InstancePath>
+<Position>-0.012550000000007999 -0.049660965094427002 -0.027359330057192995</Position>
+<Axis>-1 0 9.9999999999999889e-16</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric5">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_06-1</Uid>
+<Uid>Save Bodies1[23]-1</Uid>
+</InstancePath>
+<Position>-0.0077500000000080005 -0.037760965094427001 -0.027359330057192995</Position>
+<Axis>-1 0 1.0000000000000001e-15</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_05-1</Uid>
+<Uid>Save Bodies1[17]-1</Uid>
+</InstancePath>
+<Position>-0.012550000000008001 -0.037760965094426995 -0.027359330057193008</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric6">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_05-1</Uid>
+<Uid>Save Bodies1[17]-1</Uid>
+</InstancePath>
+<Position>-0.012550000000008001 -0.025860965094426997 -0.027359330057193008</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_04-1</Uid>
+<Uid>Save Bodies1[7]-1</Uid>
+</InstancePath>
+<Position>-0.0077500000000080005 -0.025860965094427001 -0.027359330057192995</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric7">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_03-1</Uid>
+<Uid>Save Bodies1[5]-1</Uid>
+</InstancePath>
+<Position>-0.0053500000000080003 -0.013960965094427 -0.027359330057192995</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_04-1</Uid>
+<Uid>Save Bodies1[7]-1</Uid>
+</InstancePath>
+<Position>-0.010150000000008 -0.013960965094427 -0.027359330057192995</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric8">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_03-1</Uid>
+<Uid>Save Bodies1[5]-1</Uid>
+</InstancePath>
+<Position>-0.0077500000000080005 -0.0020609650944269997 -0.027359330057192995</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_02-1</Uid>
+<Uid>Save Bodies1[18]-1</Uid>
+</InstancePath>
+<Position>-0.0029500000000080009 -0.0020609650944269997 -0.027359330057192995</Position>
+<Axis>-1 0 1.0000000000000001e-15</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric9">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_02-1</Uid>
+<Uid>Save Bodies1[18]-1</Uid>
+</InstancePath>
+<Position>-0.0029500000000080009 0.0098390349055729985 -0.027359330057192995</Position>
+<Axis>-1 0 1.0000000000000001e-15</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>SUB_COSTILLA_01-1</Uid>
+<Uid>Save Bodies1[2]-1</Uid>
+</InstancePath>
+<Position>-0.0077500000000079996 0.0098390349055730002 -0.027359330057192995</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_08-1</Uid>
+<Uid>Save Bodies1[4]-1</Uid>
+</InstancePath>
+<Position>-0.012550000000008001 -0.067510965094427 -0.027359330057193001</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_09-1</Uid>
+<Uid>Save Bodies1[9]-1</Uid>
+</InstancePath>
+<Position>-0.012550000000007999 -0.079410965094427008 -0.027359330057193001</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident11">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_08-1</Uid>
+<Uid>Save Bodies1[4]-1</Uid>
+</InstancePath>
+<Position>-0.012550000000008001 -0.067510965094427 -0.027359330057193001</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_07-1</Uid>
+<Uid>Save Bodies1[10]-1</Uid>
+</InstancePath>
+<Position>-0.012550000000007999 -0.055610965094426999 -0.027359330057193001</Position>
+<Axis>-1 0 9.9999999999999889e-16</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident12">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_06-1</Uid>
+<Uid>Save Bodies1[23]-1</Uid>
+</InstancePath>
+<Position>-0.010150000000008 -0.043710965094426998 -0.027359330057193001</Position>
+<Axis>-1 0 1.0000000000000001e-15</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_07-1</Uid>
+<Uid>Save Bodies1[10]-1</Uid>
+</InstancePath>
+<Position>-0.010150000000008 -0.055610965094426999 -0.027359330057193001</Position>
+<Axis>1 0 -9.9999999999999889e-16</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident13">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_06-1</Uid>
+<Uid>Save Bodies1[23]-1</Uid>
+</InstancePath>
+<Position>-0.010150000000008 -0.043710965094426998 -0.027359330057193001</Position>
+<Axis>-1 0 1.0000000000000001e-15</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_05-1</Uid>
+<Uid>Save Bodies1[17]-1</Uid>
+</InstancePath>
+<Position>-0.010150000000008002 -0.031810965094426998 -0.027359330057193001</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident14">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_05-1</Uid>
+<Uid>Save Bodies1[17]-1</Uid>
+</InstancePath>
+<Position>-0.010150000000008002 -0.031810965094426998 -0.027359330057193001</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_04-1</Uid>
+<Uid>Save Bodies1[7]-1</Uid>
+</InstancePath>
+<Position>-0.010050000000008 -0.023910965094427 -0.029809330057193002</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident17">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_03-1</Uid>
+<Uid>Save Bodies1[5]-1</Uid>
+</InstancePath>
+<Position>-0.0078000000000080002 -0.01301096509442644 -0.027359330057192575</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_04-1</Uid>
+<Uid>Save Bodies1[7]-1</Uid>
+</InstancePath>
+<Position>-0.0077000000000080008 -0.013710965094427001 -0.029009330057193</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident18">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_03-1</Uid>
+<Uid>Save Bodies1[5]-1</Uid>
+</InstancePath>
+<Position>-0.0053500000000080003 -0.0080109650944269993 -0.027359330057193001</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_02-1</Uid>
+<Uid>Save Bodies1[18]-1</Uid>
+</InstancePath>
+<Position>-0.0053500000000080011 0.0038890349055729998 -0.027359330057193001</Position>
+<Axis>-1 0 1.0000000000000001e-15</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident21">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_02-1</Uid>
+<Uid>Save Bodies1[18]-1</Uid>
+</InstancePath>
+<Position>-0.0054000000000080008 0.0088890349055728533 -0.027359330057193133</Position>
+<Axis>-1 0 1.0000000000000001e-15</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SUB_COSTILLA_01-1</Uid>
+<Uid>Save Bodies1[2]-1</Uid>
+</InstancePath>
+<Position>-0.0053500000000080003 0.015789034905572999 -0.027359330057193001</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="SUB_COSTILLA_08" uid="SUB_COSTILLA_08" version="102">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="SUB_COSTILLA_08.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="SUB_COSTILLA_03" uid="SUB_COSTILLA_03" version="109">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="SUB_COSTILLA_03.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="SUB_COSTILLA_06" uid="SUB_COSTILLA_06" version="102">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="SUB_COSTILLA_06.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="SUB_COSTILLA_05" uid="SUB_COSTILLA_05" version="102">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="SUB_COSTILLA_05.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="SUB_COSTILLA_02" uid="SUB_COSTILLA_02" version="104">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="SUB_COSTILLA_02.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="SUB_COSTILLA_04" uid="SUB_COSTILLA_04" version="108">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="SUB_COSTILLA_04.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="SUB_COSTILLA_07" uid="SUB_COSTILLA_07" version="102">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="SUB_COSTILLA_07.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="TEETH" uid="TEETH" version="102">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="TEETH.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="SUB_COSTILLA_01" uid="SUB_COSTILLA_01" version="104">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="SUB_COSTILLA_01.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="SUB_COSTILLA_09" uid="SUB_COSTILLA_09" version="102">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="SUB_COSTILLA_09.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="Save Bodies1[10]" uid="Save Bodies1[10]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[10].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0001650973064644939</Mass>
+<CenterOfMass>-0.011525032183871157 -0.05596552576113787 -0.027359395436266167</CenterOfMass>
+<Inertia>2.8338881013407107e-09 4.6803595071378348e-10 2.6076535088921499e-09 -7.0786822033603075e-14 4.1509722559253828e-15 -3.6674055101211987e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[10]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[11]" uid="Save Bodies1[11]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[11].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00016509730646449482</Mass>
+<CenterOfMass>0.011174967816130844 -0.032165525761137841 -0.027359395436266167</CenterOfMass>
+<Inertia>2.8338881013407397e-09 4.6803595071378555e-10 2.6076535088921776e-09 -7.0786822037084627e-14 4.150972255931405e-15 -3.6674055101212517e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[11]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[12]" uid="Save Bodies1[12]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[12].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00090356348237853633</Mass>
+<CenterOfMass>2.8798655014567557e-05 -0.079417996884754941 -0.027359221966895164</CenterOfMass>
+<Inertia>8.5812924929366897e-09 9.9641395961820221e-08 9.2407027545188634e-08 -1.3447026046558216e-13 6.8833445519900655e-13 -3.2714492785039997e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[12]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[13]" uid="Save Bodies1[13]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[13].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00078731654916136149</Mass>
+<CenterOfMass>2.3649701624488307e-06 -0.0080259333115276204 -0.027368781424786839</CenterOfMass>
+<Inertia>7.5944812045941144e-09 6.7722594342165021e-08 6.1301169845492901e-08 9.7540486461643999e-13 6.4076832993458244e-13 -2.3553438227013193e-12</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[13]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[14]" uid="Save Bodies1[14]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[14].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.042852990688455876</Mass>
+<CenterOfMass>0.00083535155160004452 -0.00031503923105927119 -0.034968179896836725</CenterOfMass>
+<Inertia>1.8336992826412281e-05 4.7469234705822969e-05 6.2876545882934449e-05 6.6811393480740284e-08 1.4198440471020439e-08 3.1174132160687797e-07</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[14]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[15]" uid="Save Bodies1[15]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[15].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00084666250841564084</Mass>
+<CenterOfMass>1.7618873821806074e-05 -0.031820589226591478 -0.02735986911933724</CenterOfMass>
+<Inertia>8.1489037404182944e-09 8.2959219763445786e-08 7.607331054246925e-08 5.748969694528561e-13 -1.3724950599184233e-12 -1.8790115433355095e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[15]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[16]" uid="Save Bodies1[16]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[16].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>4.8383999999999969e-05</Mass>
+<CenterOfMass>4.9999999992000393e-05 0.006589034905573 -0.02730933005719301</CenterOfMass>
+<Inertia>3.666672000000002e-11 4.8443183999999987e-10 4.9281983999999997e-10 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[16]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[17]" uid="Save Bodies1[17]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[17].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00016509730646449395</Mass>
+<CenterOfMass>-0.011174967816144845 -0.032165525761137848 -0.027359264678119836</CenterOfMass>
+<Inertia>2.8338881013407144e-09 4.680359507137842e-10 2.6076535088921524e-09 7.0786822033596095e-14 4.1509722563376526e-15 3.6674055101212278e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[17]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[18]" uid="Save Bodies1[18]*:*Predeterminado" version="109">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[18].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00016574724856409929</Mass>
+<CenterOfMass>-0.004329149470395673 0.0035539617911133723 -0.027359395169856544</CenterOfMass>
+<Inertia>2.851998984053224e-09 4.6980487341707634e-10 2.6254231952491473e-09 -7.1012648801390145e-14 4.1970585342120698e-15 -3.3295900160245625e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[18]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[19]" uid="Save Bodies1[19]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[19].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00011244799999999995</Mass>
+<CenterOfMass>-8.0007745498524294e-15 -0.052810965094426988 -0.027309330057193</CenterOfMass>
+<Inertia>8.5216173333333364e-11 5.9364746266666627e-09 5.9559689599999963e-09 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[19]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[1]" uid="Save Bodies1[1]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[1].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00011244799999999995</Mass>
+<CenterOfMass>-8.0007745498524294e-15 -0.029010965094427001 -0.027309330057193</CenterOfMass>
+<Inertia>8.52161733333333e-11 5.9364746266666627e-09 5.9559689599999963e-09 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[1]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[20]" uid="Save Bodies1[20]*:*Predeterminado" version="110">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[20].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00016413078228362247</Mass>
+<CenterOfMass>0.0093192956578601917 -0.020236320437312466 -0.027359264345128576</CenterOfMass>
+<Inertia>2.8079258759860946e-09 4.6572961507406973e-10 2.5821507982219187e-09 7.1047371374946596e-14 4.0970998495445854e-15 3.1977457745803031e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[20]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[21]" uid="Save Bodies1[21]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[21].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.05614944361236953</Mass>
+<CenterOfMass>-0.00011551909337634357 0.0051353715961286227 -0.00049248276246293419</CenterOfMass>
+<Inertia>2.2365587851601971e-05 3.710741359164865e-05 5.6742457003362182e-05 7.5468034592116804e-07 3.448608284375505e-08 -1.6121321648319044e-07</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[21]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[22]" uid="Save Bodies1[22]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[22].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00016509730646449371</Mass>
+<CenterOfMass>0.011525032183722155 -0.079765525761137879 -0.027359264678119839</CenterOfMass>
+<Inertia>2.8338881013407057e-09 4.6803595071378368e-10 2.6076535088921449e-09 7.0786822031824364e-14 4.150972256130138e-15 3.6674055101212342e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[22]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[23]" uid="Save Bodies1[23]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[23].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00016509730646449428</Mass>
+<CenterOfMass>-0.0091250321838711578 -0.044065525761137862 -0.027359395436266164</CenterOfMass>
+<Inertia>2.8338881013407206e-09 4.6803595071378451e-10 2.607653508892159e-09 -7.0786822032794903e-14 4.1509722560359149e-15 -3.6674055101212336e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[23]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[24]" uid="Save Bodies1[24]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[24].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00011244799999999994</Mass>
+<CenterOfMass>-8.0007745498524294e-15 -0.076610965094426983 -0.027309330057193</CenterOfMass>
+<Inertia>8.5216173333333326e-11 5.9364746266666636e-09 5.9559689599999971e-09 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[24]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[25]" uid="Save Bodies1[25]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[25].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0008315834344005239</Mass>
+<CenterOfMass>0.0001318327141149838 -0.019923211838829915 -0.027368560150510965</CenterOfMass>
+<Inertia>7.94560711341178e-09 7.5750972811295044e-08 6.904629438395575e-08 1.1121532947144027e-12 -5.635147642002404e-12 -2.944290373376527e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[25]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[26]" uid="Save Bodies1[26]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[26].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>9.1839999999999961e-05</Mass>
+<CenterOfMass>9.9999999992000287e-05 -0.017210965094426999 -0.027309330057193</CenterOfMass>
+<Inertia>6.9598866666666785e-11 3.2431519333333315e-09 3.2590735999999987e-09 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[26]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[27]" uid="Save Bodies1[27]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[27].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>6.1187587943578069e-05</Mass>
+<CenterOfMass>0.0066807869499492393 0.01156517062121961 -0.027359507108831858</CenterOfMass>
+<Inertia>2.8192591054375499e-10 1.4768256696638665e-10 1.9066833412784325e-10 -2.8321581242635419e-14 1.9279751128575117e-15 1.3779635661029164e-12</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[27]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[28]" uid="Save Bodies1[28]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[28].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00087068734976553758</Mass>
+<CenterOfMass>1.5481711294855423e-05 -0.043719184905457557 -0.027358907354022972</CenterOfMass>
+<Inertia>8.3309776735245606e-09 9.3645237201226416e-08 8.6613127169135969e-08 -4.6308393444762522e-13 1.402247943034594e-12 -1.6960435031810514e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[28]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[29]" uid="Save Bodies1[29]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[29].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>6.9887999999999952e-05</Mass>
+<CenterOfMass>4.999999999199897e-05 -0.005310965094427 -0.027309330057193007</CenterOfMass>
+<Inertia>5.2963040000000104e-11 1.437752159999999e-09 1.4498681599999989e-09 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[29]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[2]" uid="Save Bodies1[2]*:*Predeterminado" version="118">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[2].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>6.1187579159109406e-05</Mass>
+<CenterOfMass>-0.0065807869673756708 0.011565170971646398 -0.02735950603754863</CenterOfMass>
+<Inertia>2.8192584634119424e-10 1.4768254752791882e-10 1.9066828225738035e-10 -2.814569907024979e-14 -1.8814283569132663e-15 -1.3779677673067505e-12</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[2]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[30]" uid="Save Bodies1[30]*:*Predeterminado" version="129">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[30].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00016509730646449466</Mass>
+<CenterOfMass>0.0068250321838571569 -0.0083655257611378493 -0.027359264678119839</CenterOfMass>
+<Inertia>2.8338881013407326e-09 4.6803595071378575e-10 2.6076535088921701e-09 7.078682203237196e-14 4.1509722562801841e-15 3.6674055101212543e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[30]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[31]" uid="Save Bodies1[31]*:*Predeterminado" version="110">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[31].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00016462566981837492</Mass>
+<CenterOfMass>0.0044221680151993207 0.0035182799348153484 -0.027359264471903746</CenterOfMass>
+<Inertia>2.8177976867096858e-09 4.6690370039726698e-10 2.5917496542689308e-09 7.0587663358346784e-14 4.1171371413306713e-15 3.9346959406829385e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[31]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[32]" uid="Save Bodies1[32]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[32].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00016509730646449425</Mass>
+<CenterOfMass>0.01357496781612884 -0.067865525761137829 -0.027359395436266164</CenterOfMass>
+<Inertia>2.8338881013407215e-09 4.6803595071378451e-10 2.6076535088921602e-09 -7.0786822037621747e-14 4.1509722563010463e-15 -3.667405510121295e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[32]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[33]" uid="Save Bodies1[33]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[33].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00016509730646449436</Mass>
+<CenterOfMass>0.011525032183855156 -0.055965525761137863 -0.027359264678119836</CenterOfMass>
+<Inertia>2.8338881013407268e-09 4.6803595071378482e-10 2.6076535088921648e-09 7.0786822034598832e-14 4.1509722563454158e-15 3.6674055101213073e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[33]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[34]" uid="Save Bodies1[34]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[34].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00089123830259651461</Mass>
+<CenterOfMass>1.4375443480880661e-05 -0.055616736411963782 -0.027361143969195621</CenterOfMass>
+<Inertia>8.4815210097364194e-09 9.513214252082078e-08 8.7982456713474843e-08 2.0301148353186816e-12 -8.5292650960358218e-12 -1.6088874180868475e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[34]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[35]" uid="Save Bodies1[35]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[35].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00016509730646449447</Mass>
+<CenterOfMass>0.0091250321838571551 -0.044065525761137841 -0.027359264678119839</CenterOfMass>
+<Inertia>2.8338881013407302e-09 4.6803595071378544e-10 2.6076535088921673e-09 7.0786822035699072e-14 4.150972256300057e-15 3.6674055101212517e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[35]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[36]" uid="Save Bodies1[36]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[36].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00089911723385444314</Mass>
+<CenterOfMass>2.1373756785431759e-05 -0.067518117366613159 -0.027360827592565733</CenterOfMass>
+<Inertia>8.5464617822277442e-09 9.3911447479659505e-08 8.6705647922089105e-08 1.6927095040896404e-12 -6.79631251429901e-12 -2.4159637114440099e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[36]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[37]" uid="Save Bodies1[37]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[37].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.076026922513182355</Mass>
+<CenterOfMass>-0.00046635994514570282 -3.2990461775208235e-05 -0.050621254847780621</CenterOfMass>
+<Inertia>3.035633724884176e-05 4.9411942105820662e-05 7.6493637208474327e-05 -7.737170220280492e-07 1.0356339481817301e-07 -4.9207099045450928e-08</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[37]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[38]" uid="Save Bodies1[38]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[38].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00069762786650588748</Mass>
+<CenterOfMass>-2.0337369437249805e-13 0.0038723599163460027 -0.027365135444046434</CenterOfMass>
+<Inertia>6.8651291972528964e-09 4.9119308479456763e-08 4.3299904531856712e-08 6.7533654204400022e-14 3.8968688613477647e-13 0</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[38]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[39]" uid="Save Bodies1[39]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[39].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00013440000000000066</Mass>
+<CenterOfMass>4.9999999991999553e-05 -0.064710965094427003 -0.027309330057193004</CenterOfMass>
+<Inertia>1.0185200000000121e-10 1.0119276000000051e-08 1.0142576000000052e-08 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[39]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[3]" uid="Save Bodies1[3]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[3].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>9.1839999999999961e-05</Mass>
+<CenterOfMass>9.9999999992000002e-05 -0.040910965094426995 -0.02730933005719301</CenterOfMass>
+<Inertia>6.9598866666666785e-11 3.2431519333333311e-09 3.2590735999999982e-09 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[3]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[4]" uid="Save Bodies1[4]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[4].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00016509730646449458</Mass>
+<CenterOfMass>-0.013574967816144845 -0.067865525761137829 -0.027359264678119839</CenterOfMass>
+<Inertia>2.8338881013407368e-09 4.6803595071378513e-10 2.6076535088921751e-09 7.0786822034421105e-14 4.1509722564509835e-15 3.6674055101213422e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[4]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[5]" uid="Save Bodies1[5]*:*Predeterminado" version="118">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[5].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00016565481792418937</Mass>
+<CenterOfMass>-0.0067285658584033559 -0.0083812082205261072 -0.027359395206196485</CenterOfMass>
+<Inertia>2.8471981880951766e-09 4.6939997203302995e-10 2.6208249113058777e-09 -7.0617443501137691e-14 4.1905160116483793e-15 -3.9392564389436199e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[5]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[6]" uid="Save Bodies1[6]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[6].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.033398035853006214</Mass>
+<CenterOfMass>-0.0021318590289190614 0.0074504178790768842 -0.015661518234521239</CenterOfMass>
+<Inertia>1.3534095331577694e-05 2.7692042687132924e-05 3.978608085906766e-05 3.4225776804809993e-07 -4.2930528961536386e-07 -1.194193984338851e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[6]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[7]" uid="Save Bodies1[7]*:*Predeterminado" version="126">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[7].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00016483082983438099</Mass>
+<CenterOfMass>-0.0091133740180263465 -0.020211356685664827 -0.027359395467702146</CenterOfMass>
+<Inertia>2.8340765610278118e-09 4.6850256771901695e-10 2.6082390858697978e-09 -7.1337512802911864e-14 4.0299392676353669e-15 -3.7690299227383025e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[7]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[8]" uid="Save Bodies1[8]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[8].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0005992328091576197</Mass>
+<CenterOfMass>4.9758694504682402e-05 0.015745568688266529 -0.027363146666327842</CenterOfMass>
+<Inertia>5.5405552005859221e-09 2.4115124247479814e-08 1.9464120630420712e-08 -1.9542864038577572e-12 -1.1177671073620675e-12 1.8307643363161888e-13</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[8]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Save Bodies1[9]" uid="Save Bodies1[9]*:*Predeterminado" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Save Bodies1[9].SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00016509730646449428</Mass>
+<CenterOfMass>-0.011525032183871155 -0.079765525761137851 -0.027359395436266164</CenterOfMass>
+<Inertia>2.8338881013407239e-09 4.680359507137843e-10 2.6076535088921623e-09 -7.0786822036728668e-14 4.1509722562121306e-15 -3.6674055101212969e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Save Bodies1[9]_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
