@@ -1,0 +1,56 @@
+{
+    "general": {
+        "eye_corner_scale_mm": 35.0,
+        "default_duration_ms": 550.0,
+        "smooth_sigma_steps": 2.0,
+        "min_expected_participants": 45
+    },
+    "corner_5bar": {
+        "L0_ground_mm": 24.8,
+        "L1_top_crank_mm": 23.5,
+        "L2_bottom_crank_mm": 23.5,
+        "L3_top_coupler_mm": 100.97,
+        "L4_bottom_coupler_mm": 63.31,
+        "theta1_neutral_deg": 90.0,
+        "theta2_neutral_deg": -90.0,
+        "psi_cheek_yaw_deg": 71.0,
+        "alpha_mount_tilt_deg": 8.44,
+        "gain_x": 1.0,
+        "gain_y": 1.0,
+        "lower_lip_vertical_blend": 0.0,
+        "beta_min_deg": 25.0,
+        "beta_max_deg": 155.0,
+        "gamma_min_deg": 25.0,
+        "min_horn_clearance_mm": 10.0
+    },
+    "jaw": {
+        "home_servo_deg": 180.0,
+        "left_id1_open_deg": 195.0,
+        "right_id2_open_deg": 165.0,
+        "max_delta_deg": 15.0,
+        "max_tooth_opening_mm": 35.0,
+        "gain_y": 1.0
+    },
+    "upper_piston": {
+        "L1_crank_mm": 33.24,
+        "L2_coupler_mm": 46.14,
+        "L3_piston_tip_mm": 43.5,
+        "theta0_crank_deg": 45.0,
+        "slider_offset_x_mm": 19.0,
+        "rail_tilt_deg": 0.0,
+        "servo_down_limit_deg": 180.0,
+        "servo_up_limit_deg": 140.0,
+        "gain_y": 3.0,
+        "shift_min_to_zero": true
+    },
+    "lower_rack": {
+        "pinion_pitch_diam_mm": 22.1,
+        "rack_length_mm": 29.5,
+        "forward_tilt_deg": 12.5,
+        "servo_min_down_deg": 81.0,
+        "servo_max_up_deg": 150.0,
+        "servo_home_deg": 125.0,
+        "jaw_compensation_factor": 1.0,
+        "gain_y": 1.0
+    }
+}
