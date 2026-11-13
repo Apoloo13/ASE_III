@@ -1,0 +1,7 @@
+Subsistema / Mecanismo,Actuadores / Método,Ref. Humana / MATLAB (μ ± σ),Medición FK / Sim. PySINDy,RMSE,MAE,Error Máx.
+"Comisuras (5 barras 2 GDL, 61/291)",IDs 5–8 (FK Encoder),1.82 ± 3.45 mm,2.95 ± 0.57 mm,1.77 mm,1.40 mm,5.20 mm
+"Mandíbula (Arco circular, 152)",IDs 1–2 (FK Encoder),4.39 ± 4.97 mm,4.53 ± 0.89 mm,4.34 mm,3.97 mm,8.10 mm
+"Labio Inf. (Piñón-cremallera, 17)",ID 10 (FK Encoder),7.55 ± 4.75 mm,3.71 ± 1.03 mm,3.85 mm,3.19 mm,8.24 mm
+"Labio Sup. (Manivela-pistón, 0)",ID 9 (FK Encoder),1.06 ± 1.99 mm,3.56 ± 0.67 mm,1.72 mm,1.56 mm,3.26 mm
+"Lengua (Costillas pull-pull, /r,s,t/)",2 Servos (Sim. PySINDy),[ Polígono MATLAB ],[ Espacio Estados ],[ -- ],[ -- ],[ -- ]
+Desempeño Global por Sílabas,SA–SU / TA–TU / RA–RU,3.70 ± 3.79 mm,3.69 ± 0.97 mm,2.92 mm (2.98 / 2.32 / 3.45),2.53 mm (2.65 / 1.91 / 3.04),6.20 mm (5.94 / 5.63 / 7.03)
