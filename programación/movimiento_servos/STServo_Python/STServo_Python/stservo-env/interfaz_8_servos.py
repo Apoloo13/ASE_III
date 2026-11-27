@@ -41,7 +41,7 @@ except ImportError as exc:
         "Falta el SDK. Instala con: python -m pip install ftservo-python-sdk pyserial"
     ) from exc
 
-COM = "COM3"
+COM = "COM7"
 BAUDRATE = 1000000
 ESCANEAR_DESDE = 0
 ESCANEAR_HASTA = 20
