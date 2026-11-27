@@ -1821,7 +1821,7 @@ SERVO_CONFIG = {
     },
     "LOW_RACK": {
         "id": 10, "group": "rack", "label": "Labio Inf. Cremallera (81°..150°)",
-        "home_tick": 859, "dir": +1, "min_tick": 580, "max_tick": 1138,
+        "home_tick": 1100, "dir": +1, "min_tick": 580, "max_tick": 1138, #"home_tick": 859,
         "min_deg": 51.0, "max_deg": 100.0,
         "dtheta_col": "LOW_dtheta_deg",
         "omega_col":  "LOW_omega_speed_degs",
